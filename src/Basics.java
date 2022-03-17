@@ -1,24 +1,33 @@
 
 public class Basics {
-	
+	// prime number
+	//get the count of numbers by num%i
+	// if num%i ==2 then prime
 	public static void main(String[] args)
 	{
-	  // fibonacci
+	  // prime no
 		
-		int n1 = 0 ;
-		int n2 = 1;
-		int sum  = 0 ;
-     
+		int num = 3 ;
+		int count  =  0 ;
 		
-		for(int i=2;i<10;i++)
-		{
-			sum = n1 + n2 ;
-			System.out.println("Fibonacci series" +sum);
-			n1 = n2 ;
-			n2  = sum ;
+	if(num>1) {	for(int i=1;i<=num ;i++)
+		{ if(num%i==0) {
+			count++ ;
 		}
+		}
+			
+			if(count == 2)
+			{
+				System.out.println("This is Prime Number");
+			}
+			else
+			{
+		System.out.println("This is not Prime number");
+			}
 		
-		System.out.println("Total FIbonacci series is"+sum);
-}
 	
+	}
+  	
+		
+	}
 }
