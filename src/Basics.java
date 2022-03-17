@@ -4,15 +4,16 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-	  int a  = 10 ;
-	  int b = 20 ;
-	  System.out.println(" The swapping Intgers are a " +a  + "b" +b );
-	  
-	  a = a+b ;
-	  b = a-b ;
-	  a = a-b ;
-	  
-	  System.out.println("after swapping +a" +a + "b " +b);
+	 int rev  = 0 ;
+	 
+	 int num  = 1234 ;
+	 while(num!=0)
+	 {
+		 rev = rev*10 + num%10 ; // this will reverse number each time 
+		 num  = num/10 ;  // this will reduce each number by 1
+	 }
+	 
+	 System.out.println(" reverse number is " + rev);
 	}
 
 }
