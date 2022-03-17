@@ -8,18 +8,21 @@ public class Basics {
 
 	public static void main(String[] args)
 	{
-   // generate factorial
+   // sum of numbers from array
 		
-		int num = 5 ;
-		int f = 1 ;
-		
-		for(int i=1;i<=num;i++)
+		int[] a = {5,2,4,5} ;
+		int sum  = 0 ;
+		// each time each value of a will be assigned to  val and add to sum
+		// enhanced for loop 
+		for(int val: a)
 		{
-			f = f*i ;
+			
+		sum = sum + val;
+		
+		
 		}
 		
-		System.out.println("Factorial of Number " +num + "is " +f);
-	}
+	 System.out.println(" Sum of all numbers from array" +sum);
   	
-		
+	}
 	}
