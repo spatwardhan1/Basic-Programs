@@ -1,33 +1,29 @@
+import java.util.Random;
+
+import org.apache.commons.lang3.RandomStringUtils;
+
+import java.lang.Object;
 
 public class Basics {
-	// prime number
-	//get the count of numbers by num%i
-	// if num%i ==2 then prime
+
 	public static void main(String[] args)
 	{
-	  // prime no
+	// generate Random Number
+		Random rand = new Random() ;
 		
-		int num = 3 ;
-		int count  =  0 ;
+		int a = rand.nextInt() ;
+		double d = rand.nextDouble();
+		//String s  = rand.toString();
 		
-	if(num>1) {	for(int i=1;i<=num ;i++)
-		{ if(num%i==0) {
-			count++ ;
-		}
-		}
-			
-			if(count == 2)
-			{
-				System.out.println("This is Prime Number");
-			}
-			else
-			{
-		System.out.println("This is not Prime number");
-			}
 		
-	
+		System.out.println("Random Number " +a + "Random Double" +d );
+	   
+		// Download commons-lang3-3.12.0-bin.zip  from https://commons.apache.org/proper/commons-lang/download_lang.cgi
+		
+		// after that Random String Utils will work
+		String random = RandomStringUtils.randomNumeric(5);
+		System.out.println("Random String " +random);
 	}
   	
 		
 	}
-}
