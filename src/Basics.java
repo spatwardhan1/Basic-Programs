@@ -8,21 +8,29 @@ public class Basics {
 
 	public static void main(String[] args)
 	{
-   // sum of numbers from array
+    // Arrays are equal or not without using Arrays.equals
 		
-	   int[] a = {1,2,3} ;
-	   
-	   for(int i = 0;i<=a.length-1;i++)
-	   {
-		   
-		   if(a[i]%2 ==0)
-		   {
-			   System.out.println("Even Number is "+a[i]);
-		   }
-		   else
-		   {
-			   System.out.println("Odd Number is " +a[i]);
-		   }
-	   }
+		
+		int[] a = {1,2,3} ;
+		int [] b = {1,2,3} ;
+		int [] c = {4,5,6,7} ;
+		boolean status = true;
+		
+		if(a.length== b.length)
+		{
+			for(int i =0 ;i<a.length-1;i++)
+			{
+				if(a[i]!=b[i])
+					status = false;
+			}
+			
+			
+		}
+		else
+		{
+			status = false ;
+		}
+		System.out.println("Status is " +status);
+	
 	}
 	}
