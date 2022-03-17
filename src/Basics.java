@@ -10,19 +10,19 @@ public class Basics {
 	{
    // sum of numbers from array
 		
-		int[] a = {5,2,4,5} ;
-		int sum  = 0 ;
-		// each time each value of a will be assigned to  val and add to sum
-		// enhanced for loop 
-		for(int val: a)
-		{
-			
-		sum = sum + val;
-		
-		
-		}
-		
-	 System.out.println(" Sum of all numbers from array" +sum);
-  	
+	   int[] a = {1,2,3} ;
+	   
+	   for(int i = 0;i<=a.length-1;i++)
+	   {
+		   
+		   if(a[i]%2 ==0)
+		   {
+			   System.out.println("Even Number is "+a[i]);
+		   }
+		   else
+		   {
+			   System.out.println("Odd Number is " +a[i]);
+		   }
+	   }
 	}
 	}
