@@ -4,16 +4,21 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-	 int rev  = 0 ;
-	 
-	 int num  = 1234 ;
-	 while(num!=0)
-	 {
-		 rev = rev*10 + num%10 ; // this will reverse number each time 
-		 num  = num/10 ;  // this will reduce each number by 1
-	 }
-	 
-	 System.out.println(" reverse number is " + rev);
-	}
-
+   // reverse a string using array 
+		
+		// Convert string to Char Array
+		// loop from the end
+		String rev  = " " ;
+		String str = "abcd";
+		char a[]  = str.toCharArray();
+		for(int i = str.length()-1;i>=0 ;i--)
+		{
+			 rev = rev + a[i];
+		}
+		
+		System.out.println(" The revers of the given String is");
+		
+		System.out.println(rev);
+}
+	
 }
