@@ -3,22 +3,17 @@ public class Basics {
 	
 	public static void main(String[] args)
 	{
-		// count the numbers
-		// create sum
-		// sum + each number num%10
-     int num = 12345 ;
-     int sum = 0 ;
+		// greatest number of 3 characters
+		// check between a and b and then c and combination of a and b
+		 int a = 2 ;
+		 int b = 5 ;
+		 int c = 2 ;
+		int largest = a>b?a:b ;
+		int largest2  = c >largest?c:largest ;
+		
+		System.out.println("Largest" + largest2);
+		
      
-     while(num > 0)
-     {
-    	 
-    	 sum = sum + num%10 ;
-    	 num = num/10 ;
-    	
-    }
-    
-    System.out.println("Return sum" +sum);
-    //System.out.println("return odd count" +odd_count);
 		
 }
 	
