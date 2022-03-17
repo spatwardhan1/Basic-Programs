@@ -4,21 +4,32 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-   // reverse a string using array 
+   // check palindrom number
+		// do reveses and then  check the origi number with reverse number
 		
-		// Convert string to Char Array
-		// loop from the end
-		String rev  = " " ;
-		String str = "abcd";
-		char a[]  = str.toCharArray();
-		for(int i = str.length()-1;i>=0 ;i--)
+		int rev  = 0 ;
+		
+		int num =16461 ;
+		int o = num;
+		while(num!=0 )
 		{
-			 rev = rev + a[i];
+			
+			rev = rev*10 + num%10 ;
+			num  = num/10 ;
 		}
 		
-		System.out.println(" The revers of the given String is");
+		System.out.println("reverse Num is" + rev);
+		System.out.println("reverse" );
 		
-		System.out.println(rev);
+		if(o==rev)
+		{ 
+			System.out.println("Palindrome Number");
+		}
+		else {
+			System.out.println("Not a palindorm");
+			
+		}
+
 }
 	
 }
