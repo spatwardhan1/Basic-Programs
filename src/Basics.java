@@ -4,32 +4,37 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-   // check palindrom number
-		// do reveses and then  check the origi number with reverse number
+    // check palindrome string
 		
-		int rev  = 0 ;
+		// reverse the string
+		// check the reverse string with original string
 		
-		int num =16461 ;
-		int o = num;
-		while(num!=0 )
+		String str = "MADAM" ;
+		String abc = "MADAM";
+		String original = str ;
+		String rev = "";
+		
+		
+		for(int i = str.length()-1;i>=0;i--)
 		{
-			
-			rev = rev*10 + num%10 ;
-			num  = num/10 ;
-		}
-		
-		System.out.println("reverse Num is" + rev);
-		System.out.println("reverse" );
-		
-		if(o==rev)
-		{ 
-			System.out.println("Palindrome Number");
-		}
-		else {
-			System.out.println("Not a palindorm");
+			rev = rev + str.charAt(i);
 			
 		}
-
+		
+		System.out.println("reverse " +rev);
+		System.out.println("Original" +original);
+		System.out.println(original.equalsIgnoreCase(rev));
+		// if getting false "" should not have space
+		if(original.equalsIgnoreCase(rev))
+		{
+			System.out.println(" Palidrome in String");
+		}
+		
+		else
+		{
+			System.out.println(" Not a palindrome");
+		}
+		
 }
 	
 }
