@@ -5,27 +5,28 @@ import java.util.Scanner;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.lang.Object;
 
 public class Basics {
 
 	public static void main(String[] args)
 	{
-   // Read from FIle
-		File file = new File("C:\\Users\\SP\\Downloads\\Test.txt");
-	
+   // File Writer to write from File
 		try {
-		Scanner scan = new Scanner(file);
-		// Z will match every line
-		scan.useDelimiter("\\Z");
-		System.out.println(scan.next());
+		FileWriter file = new FileWriter("C:\\Users\\SP\\Downloads\\Test.txt");
+	  BufferedWriter w = new BufferedWriter(file);
+	  w.write("New Word one");
+	  w.write(" writing word 2");
+	  // remeber to close buffer writer
+	  w.close();
+	  System.out.println("written ");
 		}catch(Exception e)
 		{
-			System.out.println("FIle Incorrect path");
-			
+			System.out.println("Unhandle Exception");
 		}
-
 	}
 	}
 	
