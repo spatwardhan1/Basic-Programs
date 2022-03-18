@@ -12,11 +12,13 @@ public class Basics {
 	{
     // replace all white space
 		
-		String str = " JAVA  is a Programming Language";
-		// replace all white spaces using s
-		str=str.replaceAll("\\s", "");
+		String str = " JAVA  MAVA";
+		// length after remove A
+		int remo=str.replace("A","").length();
+		// Total - Remove A
+		int total = str.length()-remo;
 		
-		System.out.println("String after replacing" +str);
+		System.out.println("Num of Char" +total);
 		
 	   }
 	}
