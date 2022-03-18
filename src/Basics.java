@@ -10,13 +10,14 @@ public class Basics {
 
 	public static void main(String[] args)
 	{
-    // regex to remove unnecessary characters
-		// replaceall() apart from this delete all
+    // replace all white space
 		
-		String s ="? lating12B";
-		//replace all other than alplabets and DIgits with space
-		s= s.replaceAll("[^a-zA-Z0-9]", "");
-	System.out.println(" New String" +s);
+		String str = " JAVA  is a Programming Language";
+		// replace all white spaces using s
+		str=str.replaceAll("\\s", "");
+		
+		System.out.println("String after replacing" +str);
+		
 	   }
 	}
 	
