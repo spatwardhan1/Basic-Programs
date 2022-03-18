@@ -10,13 +10,21 @@ public class Basics {
 
 	public static void main(String[] args)
 	{
-    // replace all white space
-		
-		String str = "JAVA  MAVA is";
-		// split the string by array and put in string Array
-    String strArray[] = 	str.split("\\W+");
-    System.out.println(" String length without space" +strArray.length);
-		
+  // reverse each word from String
+	  String s = "Welcome to JAVA";
+	  String[] words = s.split("\\s");
+	  String rev = "" ;
+	  // take each word
+	  for(String w:words)
+	  {
+		  StringBuilder b = new StringBuilder(w);
+		  // reverse each word
+		  b.reverse();
+		  // store in rev and after each word put space
+		  rev =rev + b.toString() + " ";
+	  }
+	  
+	  System.out.println("Reverse String is" +rev);
 	   }
 	}
 	
