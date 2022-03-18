@@ -12,13 +12,10 @@ public class Basics {
 	{
     // replace all white space
 		
-		String str = " JAVA  MAVA";
-		// length after remove A
-		int remo=str.replace("A","").length();
-		// Total - Remove A
-		int total = str.length()-remo;
-		
-		System.out.println("Num of Char" +total);
+		String str = "JAVA  MAVA is";
+		// split the string by array and put in string Array
+    String strArray[] = 	str.split("\\W+");
+    System.out.println(" String length without space" +strArray.length);
 		
 	   }
 	}
