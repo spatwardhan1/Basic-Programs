@@ -10,14 +10,13 @@ public class Basics {
 
 	public static void main(String[] args)
 	{
-    // sort in reverse order use Collections.reverorder
-		// print Arrays.to String
+    // regex to remove unnecessary characters
+		// replaceall() apart from this delete all
 		
-		Integer a[] = {10,20,30,40};
-		System.out.println("Arrays Before Sorting"+Arrays.toString(a));
-		Arrays.sort(a, Collections.reverseOrder());
-		System.out.println("Arrays After Sorting"+Arrays.toString(a));
-    
+		String s ="? lating12B";
+		//replace all other than alplabets and DIgits with space
+		s= s.replaceAll("[^a-zA-Z0-9]", "");
+	System.out.println(" New String" +s);
 	   }
 	}
 	
