@@ -1,5 +1,7 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -21,23 +23,23 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-	   // creating window
-		
-		JFrame frame = new JFrame("This is window Name");
-		
-		// add button
-		JButton button = new JButton("Click Me");
-		// add Action Listner method which will give the response after clicking the button
-		button.addActionListener(e ->{
-			System.out.println("Button Clicked");
-			// pop up Option using Joption Pane
-			JOptionPane.showMessageDialog(null, "Hello Clicked on Button Click Me");
+	List<Integer>  list = new ArrayList<>() ;
+	List<Integer>  list3 = Arrays.asList(23, 22,10,5);
+	for(int i: list3)
+	{
+		if(i%2 == 0)
+		{
+			list.add(i);
+			System.out.println("  Is Even Number");
 		}
-				);
-		frame.add(button);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setVisible(true);
-		frame.setLayout(new FlowLayout());
+		else 
+		{
+			System.out.println(" Not A Even ");
+		}
+	}
+	
+	System.out.println("list 1" + list);
+	
 	}
 	}
 	
