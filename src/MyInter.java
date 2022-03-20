@@ -2,5 +2,5 @@
 
 @FunctionalInterface
 public interface MyInter {
-   public abstract int sum(int a, int b) ;
+   public  int  len(String str) ;
 }

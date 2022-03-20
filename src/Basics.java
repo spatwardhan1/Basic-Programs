@@ -3,6 +3,8 @@ import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.swing.JFrame;
+
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.io.BufferedWriter;
@@ -15,12 +17,11 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-		// lamda write () ->  and then body
-    MyInter i = (a,b)-> {return a+b;};
-    
-    
-   System.out.println(i.sum(2, 4));
-    
+	   // creating window
+		
+		JFrame frame = new JFrame("This is window Name");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
 	}
 	}
 	
