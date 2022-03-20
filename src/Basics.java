@@ -15,16 +15,8 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-		// create interface and  select un implemented methods
-    MyInter i = new MyInter() {
-
-		@Override
-		public void sayHello() {
-			// TODO Auto-generated method stub
-			System.out.println("hello");
-		}
-    	
-    };
+		// lamda write () ->  and then body
+    MyInter i = ()-> System.out.println(" First time using Lambda expressions");
     
     
     i.sayHello();
