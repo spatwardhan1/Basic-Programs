@@ -2,5 +2,5 @@
 
 @FunctionalInterface
 public interface MyInter {
-   public abstract void sayHello() ;
+   public abstract int sum(int a, int b) ;
 }

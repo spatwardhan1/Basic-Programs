@@ -16,10 +16,10 @@ public class Basics {
 	{
 		
 		// lamda write () ->  and then body
-    MyInter i = ()-> System.out.println(" First time using Lambda expressions");
+    MyInter i = (a,b)-> {return a+b;};
     
     
-    i.sayHello();
+   System.out.println(i.sum(2, 4));
     
 	}
 	}
