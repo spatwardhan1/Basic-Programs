@@ -14,19 +14,21 @@ public class Basics {
 
 	public static void main(String[] args)
 	{
-   // File Writer to write from File
-		try {
-		FileWriter file = new FileWriter("C:\\Users\\SP\\Downloads\\Test.txt");
-	  BufferedWriter w = new BufferedWriter(file);
-	  w.write("New Word one");
-	  w.write(" writing word 2");
-	  // remeber to close buffer writer
-	  w.close();
-	  System.out.println("written ");
-		}catch(Exception e)
-		{
-			System.out.println("Unhandle Exception");
+		
+		// create interface and  select un implemented methods
+    MyInter i = new MyInter() {
+
+		@Override
+		public void sayHello() {
+			// TODO Auto-generated method stub
+			System.out.println("hello");
 		}
+    	
+    };
+    
+    
+    i.sayHello();
+    
 	}
 	}
 	
