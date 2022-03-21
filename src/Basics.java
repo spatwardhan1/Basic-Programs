@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,32 +31,27 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-    ArrayList<String>  list = new ArrayList<>();
-    list.add("Soham");
-    list.add("Patwardhan");
-    list.add("ABCD");
-    
-    // call the Iterator method and pass to Object
-    
-    Iterator<String>  itr = list.iterator();
-    
-    System.out.println("Iterator calling");
-    while(itr.hasNext())
-    {
-    	System.out.println(itr.next());
-    }
-    
-    // backward Traversal using List Iterator and give size so the last ele is pointed
-    System.out.println("Traversing in Reverse Order");
-   ListIterator<String>  litr = list.listIterator(list.size());
+		// put is used to insert all the elements in map
+
+   HashMap<String ,Integer>	map = new HashMap<>() ;
+   map.put("JAVA", 001);
+   map.put("Spring", 003);
+   map.put("Collections", 002);
    
-   while(litr.hasPrevious())
-   {
-	   System.out.println(litr.previous());
-   }
-	  
-	 
+   System.out.println(map);
+   
+   
+   System.out.println("using for each");
+   
+   map.forEach((e1,e2)-> {
+   System.out.println(e1+ "=>" + e2);}
+		   
+		   );
 		
+   
+   // get Each ELement
+   
+   System.out.println("Course Java" +map.get("JAVA"));
 	}
 	}
 	
