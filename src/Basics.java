@@ -25,11 +25,25 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-    // filter is condition and map is operation for each element
+  // sorted to sort the elements
 		
-		List<Integer> numbers = Arrays.asList(10,20);
-		List<Integer> newN = numbers.stream().map(i->i*i).collect(Collectors.toList());
-		System.out.println(newN);
+		List<Integer> numbers = Arrays.asList(10,20, 40, 30);
+		numbers.stream().sorted().forEach(System.out::println);
+		//System.out.println(newN);
+		
+		
+		//min  and get for getting single element		
+		Integer inte = numbers.stream().min((x,y)-> x.compareTo(y)).get();
+		System.out.println("min element");
+		System.out.println(inte);
+		
+		// max
+		Integer inteM = numbers.stream().max((x,y)-> x.compareTo(y)).get();
+		System.out.println("max element");
+		System.out.println(inteM);
+		
+		
+		
 	}
 	}
 	
