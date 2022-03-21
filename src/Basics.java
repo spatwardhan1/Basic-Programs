@@ -25,18 +25,18 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-		List<Integer>  list = new ArrayList<>();
-		list.add(1);
-		list.add(2);
-		System.out.println("New List"+list);
-	   // create stream
-		Stream<Integer> stream = list.stream();
-		// preform operation on stream
-		// filter to add boolean condition
-		// and finally collected the filtered elements into List
-		List<Integer> newList = stream.filter(i->i%2==0).collect(Collectors.toList());
-		System.out.println(" List afete stream" +newList);
-	
+   // creating Stream
+		
+		
+		// using STring Array
+		// create string Array
+		String names[]  = {"ABC","PQR", "XYZ"};
+		// Stream.of and pass array 
+	   Stream<String> st = Stream.of(names);
+	   // use for Each a-> syso(a)  to print the elements
+	   st.forEach(a-> {
+		   System.out.println("Priniting elements"+a);
+	   });
 	}
 	}
 	
