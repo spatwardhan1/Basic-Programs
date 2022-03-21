@@ -25,18 +25,11 @@ public class Basics {
 	public static void main(String[] args)
 	{
 		
-   // creating Stream
+    // filter is condition and map is operation for each element
 		
-		
-		// using STring Array
-		// create string Array
-		String names[]  = {"ABC","PQR", "XYZ"};
-		// Stream.of and pass array 
-	   Stream<String> st = Stream.of(names);
-	   // use for Each a-> syso(a)  to print the elements
-	   st.forEach(a-> {
-		   System.out.println("Priniting elements"+a);
-	   });
+		List<Integer> numbers = Arrays.asList(10,20);
+		List<Integer> newN = numbers.stream().map(i->i*i).collect(Collectors.toList());
+		System.out.println(newN);
 	}
 	}
 	
