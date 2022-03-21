@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -60,8 +61,7 @@ public class Basics {
 		str.add(1, "SP NEW");
 		System.out.println(str);
 		// clear to remove all elements
-		str.clear();
-		System.out.println("Removing all elements" +str);
+	;
 		
 		// un type safe -> not a same type of elements
 		
@@ -76,6 +76,12 @@ public class Basics {
 	   
 	   
 	  System.out.println("_____________________________");
+	  
+	  TreeSet  tree = new TreeSet();
+	  System.out.println("Tree Set Values");
+	  tree.add(14.14);
+	  tree.add(13.12);
+	  System.out.println(tree);
 	  
 	 
 		
