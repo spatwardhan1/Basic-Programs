@@ -26,6 +26,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.lang.Object;
 
+// create Custom Exception Class
+class AgeInvalidException  extends Exception {
+	public AgeInvalidException() {
+		// TODO Auto-generated constructor stub
+		// pass to parent class Exception
+		super("Age is invalid");
+	}
+}
+
 public class Basics {
 
 	public static void main(String[] args)
@@ -34,9 +43,14 @@ public class Basics {
 		// put is used to insert all the elements in map
   int a= 10, b= 0 ;
      try  {
-    	 int c = a/b ;
-    	 System.out.println("message in C is" +c);
+    	 //int c = a/b ;
+    	 //System.out.println("message in C is" +c);
     	 
+    	 if(a>=10)
+    	 {  // throw to Custom Exception class
+    		 throw new AgeInvalidException();
+    	 }
+    		 
     	 
      }catch(Exception e)
      {
