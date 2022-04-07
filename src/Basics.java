@@ -32,28 +32,30 @@ public class Basics {
 	{
 		
 		// put is used to insert all the elements in map
+  int a= 10, b= 0 ;
+     try  {
+    	 int c = a/b ;
+    	 System.out.println("message in C is" +c);
+    	 
+    	 
+     }catch(Exception e)
+     {
+    	 System.out.println(e.getMessage());
+    	 
+     }
+     finally {
+    	 
+    	 System.out.println("Alway on");
+     }
+	}
+	}
 
-   HashMap<String ,Integer>	map = new HashMap<>() ;
-   map.put("JAVA", 001);
-   map.put("Spring", 003);
-   map.put("Collections", 002);
-   
-   System.out.println(map);
-   
-   
-   System.out.println("using for each");
-   
-   map.forEach((e1,e2)-> {
-   System.out.println(e1+ "=>" + e2);}
-		   
-		   );
-		
-   
-   // get Each ELement
-   
-   System.out.println("Course Java" +map.get("JAVA"));
-	}
-	}
+/*
+ * Output
+ * / by zero
+Alway on
+ * 
+ */
 	
 	
 	
