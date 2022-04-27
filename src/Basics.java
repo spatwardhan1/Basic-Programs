@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.* ;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
@@ -26,41 +26,22 @@ import java.io.File;
 import java.io.FileWriter;
 import java.lang.Object;
 
-// create Custom Exception Class
-class AgeInvalidException  extends Exception {
-	public AgeInvalidException() {
-		// TODO Auto-generated constructor stub
-		// pass to parent class Exception
-		super("Age is invalid");
-	}
-}
 
 public class Basics {
 
-	public static void main(String[] args)
-	{
-		
-		// put is used to insert all the elements in map
-  int a= 10, b= 0 ;
-     try  {
-    	 //int c = a/b ;
-    	 //System.out.println("message in C is" +c);
-    	 
-    	 if(a>=10)
-    	 {  // throw to Custom Exception class
-    		 throw new AgeInvalidException();
-    	 }
-    		 
-    	 
-     }catch(Exception e)
-     {
-    	 System.out.println(e.getMessage());
-    	 
-     }
-     finally {
-    	 
-    	 System.out.println("Alway on");
-     }
+  public static void  main(String[] args) {
+	// TODO Auto-generated method stub
+
+    // iTERATE hASHmAP  1) CREATE MAP 2) MAP.GET AND KEY
+	  
+	  HashMap<String, String>  map = new HashMap<>() ;
+	  map.put("Key 1", "Value 1") ;
+	  map.put("Key 2", "Value 2");
+	  for(String key: map.keySet())
+	  {
+		  System.out.println("key" +key + "value" +map.get(key));
+		  
+	  }
 	}
 	}
 
