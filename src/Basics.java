@@ -32,16 +32,36 @@ public class Basics {
   public static void  main(String[] args) {
 	// TODO Auto-generated method stub
 
-    // iTERATE hASHmAP  1) CREATE MAP 2) MAP.GET AND KEY
+    // sort  map using key
 	  
-	  HashMap<String, String>  map = new HashMap<>() ;
-	  map.put("Key 1", "Value 1") ;
-	  map.put("Key 2", "Value 2");
-	  for(String key: map.keySet())
+	  HashMap<Integer, String>  map = new HashMap<>() ;
+	  map.put(2, "second") ;
+	  map.put(1, "first");
+	  map.put(3, "third");
+	  
+	  
+	  // create Tree Map 
+	  
+	  Map<Integer, String > t = new TreeMap<>(map) ;
+	  // create Set
+	  
+	  Set s = t.entrySet();
+	  // create Iterator
+	  Iterator it = s.iterator() ;
+	  
+	  // Iterate
+	  while( it.hasNext())
 	  {
-		  System.out.println("key" +key + "value" +map.get(key));
-		  
+		  // create entry pair
+		  Map.Entry pair = (Map.Entry) it.next();
+		  // print keys 
+		  System.out.println(pair.getKey());
+		  System.out.println(pair.getValue());
 	  }
+	  
+	  
+	  
+   
 	}
 	}
 
