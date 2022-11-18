@@ -1,35 +1,22 @@
 import java.util.* ;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.TreeSet;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.plaf.basic.BasicTreeUI.TreeCancelEditingAction;
-
-import org.apache.commons.lang3.RandomStringUtils;
 import org.omg.CosNaming.NamingContextExtPackage.AddressHelper;
 
 import java.awt.FlowLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
-import java.lang.Object;
+import java.io.File;
+import java.util.Scanner;
+
 
 
 public class Basics {
 
   public static void  main(String[] args) {
+
 	// TODO Auto-generated method stub
 
     // sort  map using key
@@ -64,7 +51,30 @@ public class Basics {
 	  
    
 	}
-	}
+
+
+	  // File Writer to write from File
+	  
+	  // Read from FIle
+		File file = new File("C:\\Users\\SP\\Downloads\\Test.txt");
+  /// feature branch is this  
+		try {
+		Scanner scan = new Scanner(file);
+		// Z will match every line
+		scan.useDelimiter("\\Z");
+		System.out.println(scan.next());
+		}catch(Exception e)
+		{
+			System.out.println("FIle Incorrect path");
+
+		}
+		
+		}
+  
+  
+  
+}
+
 
 /*
  * Output
